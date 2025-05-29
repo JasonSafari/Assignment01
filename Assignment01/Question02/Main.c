@@ -1,10 +1,18 @@
-#include <stdio.h>
-
 // PROG72370 - 25S - Jason - Austin - Week04
 
-int main(void) {
+#include <stdio.h>
+#include "product.h"
 
+int main() {
+    int n;
+    printf("Enter number of products to create: ");
+    scanf("%d", &n);
 
+    Node* productList = createList(n);
 
-	return 0;
+    printf("\nProduct List:\n");
+    traverseList(productList);
+
+    freeList(productList);
+    return 0;
 }
