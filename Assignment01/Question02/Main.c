@@ -1,5 +1,6 @@
 // PROG72370 - 25S - Jason - Austin - Week04
 
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include "product.h"
 
