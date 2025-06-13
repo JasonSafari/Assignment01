@@ -5,6 +5,7 @@
 
 // Creates a list with 'n' random products
 Node* createList(int n) {
+
     srand((unsigned int)time(NULL));  // Seed random number generator
 
     Node* head = NULL;  // Start with an empty list
@@ -24,6 +25,7 @@ Node* createList(int n) {
 
 // Inserts a product at the end of the linked list
 Node* insertAtEnd(Node* head, Product newProd) {
+
     // Allocate memory for new node
     Node* newNode = (Node*)malloc(sizeof(Node));
     newNode->data = newProd;  // Assign product data
